@@ -1,0 +1,70 @@
+/* body{
+    background-color: red;
+} */
+
+/* If i want to change my body color when at reach to 1000px so the style must be change and the syntax is mentioned below */
+/* Below is the syntax of Media Queries */
+/* @media screen and (max-width: 1000px){
+    body{
+        background-color: rgb(174, 255, 0);
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        background-color: blue;
+    }
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* nav ul{ */
+/* Color which we used in syntax is of text color */
+    /* background-color: black;
+    color: white;
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    justify-content: flex-end;
+    gap: 20px;
+} */
+/* To increase the font size the syntax is below text decoration we used to remove the line from text*/
+/* nav ul li a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+} */
+
+/* Most important if i want to change it in Mobile veiw then the syntax is mentioned below */
+/* Iska mtlb hai ki 500 px hone par row se chize colomn me aa jyengi */
+/* @media screen and (max-width:500px) {
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+} */
+
+/* Concept of Grid container in Meida queries */
+
+.grid-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.grid-item{
+    background-color: aqua;
+    padding: 20px;
+    font-size: 30px;
+}
+/* This is important syntax for responsive design */
+@media screen and (max-width: 400px){
+    .grid-container{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

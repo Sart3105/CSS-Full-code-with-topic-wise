@@ -1,0 +1,39 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+}
+.box{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+}
+/* Now i need some animation on my box when I hover on it */
+.box:hover{
+    animation-name: myanimation1;
+    animation-duration: 2s;
+}
+/* Syntax for defining the Animations in CSS */
+/* 0% means 0 ke baad change hoga box me and ese hi sbhi % base me hota hai */
+@keyframes myanimation1{
+    0%{
+        background-color: black;
+        transform: translate(0px,0px);
+    }
+    25%{
+        background-color: red;
+        transform: translate(400px,0px);
+    }
+    50%{
+        background-color: yellow;
+        transform: translate(400px,400px);
+    }
+    75%{
+        background-color: green;
+        transform: translate(0px,400px);
+    }
+    100%{
+        background-color: black;
+        transform: translate(0px,0px);   
+    }
+}

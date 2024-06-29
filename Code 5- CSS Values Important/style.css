@@ -1,0 +1,44 @@
+.html{font-size: 10px;}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container1{
+    font-size: 10px;
+    background-color: pink;
+    width: 50%;
+}
+/* Below syntax used to find the pixel */
+.absolute_px{
+    font-size: 50px;
+    background-color: plum;
+    width: 100vh;
+}
+/* The below em derives its size from the parent container */
+.relative_em{
+    font-size: 2em;
+}
+body{
+    font-size: 10px;
+}
+/* rem derives its size from the root container */
+.relative_rem{
+    font-size: 1.5rem;
+}
+/* The below syntax is used to define the character of our words which we have written in our paragraph- ch defines the number of characters */
+.widthch{
+    width: 10ch;
+}
+h1{
+    background-color: palevioletred;
+
+}
+/* The height vh which is used below to put the container in the center, for example the full height of page is 1000 then we put 500vh for half of it */
+.container2{
+    height: 500vh;
+    background-color: palegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

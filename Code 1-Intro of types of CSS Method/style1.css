@@ -1,0 +1,20 @@
+*{
+    margin: 10;
+    padding: 10;
+}
+/* <!-- Style syntax we used to color the selector which we want to color below the selector is h1 and P--> */
+/* h1{
+    color:blue;
+}
+p{
+    color: crimson;
+} */
+ /* Syntax to color the class and we can color the headings and paragraphs by making class of it and we can do this multiple times*/
+ .myHead1 , .myptag{
+    color: hotpink;
+    /* background-color: chocolate; */
+ }
+ /* ID syntax below and ID whenever we write we write in small letters only in development */
+ #mythirdelement{
+    color: chartreuse;
+ }

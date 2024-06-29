@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Below the syntax of Grid we are using */
+/* Grid gap used to give gap between the items */
+/* we use grid template coloumns to show the item accoding to the space in pixels */
+.container{
+    display: grid;
+    margin: 20px;
+    grid-gap: 10px;
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    /* grid-template-columns: 100px 200px 300px; */
+/* Below grid template coloumn ke sth me "fr" use isiliye kiya hai equally divide krne ke liye sections ko  */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(3,1fr);
+    /* grid-template-rows: 50px 150px 50px; */
+    border: 2px solid black;
+} 
+.item{
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+}
+/* Now we want to show the Navbar will take the whole space. so as Navbar is our first child then the syntax for child is mentioned below - */
+/* Grid coloumn 1/4 we have used kyonki hme navbar ko 4 row tak show krna hai mtlb ki 1 se 4 tak dikhega wo  */
+.item:nth-child(1){
+    grid-column: 1/4;
+    background-color: greenyellow;
+}
+.item:nth-child(2){
+    grid-column: 1/2;
+    background-color: blue;
+}
+.item:nth-child(3){
+    grid-column: 2/4;
+    background-color: pink;
+}
+.item:nth-child(4){
+    grid-column: 1/4;
+    background-color: green;
+}

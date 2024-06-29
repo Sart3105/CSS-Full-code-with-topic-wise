@@ -1,0 +1,26 @@
+.hover-button{
+    background-color: blue;
+    color: white;
+    /* padding below is 10 and 20 px from top to bottom */
+    padding: 10px 20px;
+    border: none;
+    font-size: 13px;
+}
+/* If i want to make my button red when I hover on it the syntax is*/
+.hover-button:hover{
+    background-color: red;
+/* Transition Property     */
+    /* Niche syntax ka matlab ye hai ki agr hum hover krenge to color 1.5 second baad bdlega aur font size bhi 3sec me increase hoga*/
+    /* transition: background-color 1.5s ease-in-out , font-size 3s ease-in-out; */
+    /* For common transition we can use the below syntax */
+    transition: all 3s ease-in-out;
+    /* font-size: 25px; */
+
+    /* Transform property - This property we use always for text and container */
+/* Below means hai ki 50px axis and 30px y axis ki aur jyega item    */
+    /* transform: translateX(50px) translateY(30px); */
+    /* we can write above code in other way also */
+    /* Scale property we use to increae the sixe of text and rotate to rotate the text*/
+    transform: translate(50px , 30px) scale(1.5) rotate(45deg);
+}
+

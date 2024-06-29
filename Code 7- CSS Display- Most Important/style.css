@@ -1,0 +1,57 @@
+/* Below is the css of inline-block-element and we have used none concept also in below syntax only*/
+/* .inline-block-example{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 5px;
+    display: inline-block;
+    display: none;
+} */
+/* To use the flex we always target the parent container not the inside block level element  */
+
+/* Points to keep in mind using flex are mentioned below-
+- justify content center will work if your flex direction is row only to bring the items in center
+- If the flex direction is coloumn then we use align item center to put the items on vertically centered  */
+
+/* Note- Flex direction is coloumn then the justify content center will show the item vertically centered
+   And if flex direction is row then justify content center will show the item horizontally centered */
+
+/* Properties we can use here in flex are - Justify content - space around ,space evenly ,space between , center, flex start, flex end */
+
+/* .container{
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+} */
+
+/* Below is the syntax for Flex which is inside the container */
+/* .Flex-example{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin: 5px;
+} */
+
+/* Grid CSS Syntax is mentioned below- */
+
+/* Below is the syntax to show the items in three in each row or we can say three in a row */
+
+/* Note - When we use grid template columns for showing the items in each row then we did not put comma between the pixels  */
+
+.container{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns:100px 100px 100px;
+}
+
+.grid-example{
+    background-color: red;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    margin: 5px;
+}

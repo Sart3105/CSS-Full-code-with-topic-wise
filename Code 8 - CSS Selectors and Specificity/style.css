@@ -1,0 +1,20 @@
+/* To give the style to first p tag then the syntax is p:first-child{} */
+/* And for second paragraph is- P:nth-child(2){} */
+p{
+    color: red;
+}
+.head1{
+    color: green;
+}
+#head2{
+    color: blue;
+}
+
+/* Below is the Syntax of CSS to target the attribute for example in this case we are going to target the password */
+/* = input[type="text"] */
+
+/* Examples of Pseudo class selectors are hover, focus are mentioned below */
+
+input[type="Password"]:hover{
+    background-color: aqua;
+}

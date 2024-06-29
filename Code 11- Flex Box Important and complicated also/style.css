@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Now we need to design the container */
+.container{
+    background-color: aqua;
+    max-width: 800px;
+    min-height: 400px;
+    margin: 20px;
+}
+/* Now we need to design our p elements */
+/* Box sizing below used because as we know if we use it then the overall size will be same only 24px width it will take and 1 pixel it will cover in it, and if we will not use box sizing then it will take more count 25px plus 1 px */
+.container p{
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+/* If i dont want to take my p elemets not take whole space then the syntax is mentioned below */
+/* By default display flex take the elements in row only */
+.flexcont{
+    display: flex;
+
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+/* Justify content properties are mentioned below */
+
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+      /* justify-content: center; */
+/* Align items properties are mentioned below */
+/* Note- Align item stretch property in case of align item is by default and it will show the data in row only */
+    
+      /* align-items: center; */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: stretch; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
+
+
+/* This property we use to wrap the items or elements  */
+    
+    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap-reverse; */
+}
+
+/* Now if our p tag has width of 350px */
+
+p{
+    width: 350px;
+    height: 70px;
+    /* align-self: center; */
+    /* align-self: stretch; */
+    /* align-self: flex-start; */
+    /* align-self: flex-end; */
+}
+
+/* Below mentioned properties we can use for Dimensions Responsive designs*/
+
+/* Here in below syntax we will see the use of flex grow */
+
+/* Note- Flex basis concept work in case of flex grow only this is what i observe*/
+
+p:nth-child(1){
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+p:nth-child(2){
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+/* Below we will see the syntax of Flex shrink */
+
+/* p:nth-child(1){
+    flex-shrink: 2;    
+} */
+
+/* Flex basis we used to show the responsive dimension as it sets the initial width */
+/* p:nth-child(2){
+    flex-shrink: 2;
+} */
+
+
+
+/* To do any difference in particular element then we can use p:nth-child() and it is also known as Psuedo selectors */
+
+/* p:nth-child(3){
+    height: 100px;
+} */

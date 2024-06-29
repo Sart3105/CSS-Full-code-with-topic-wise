@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Here we will use flex in CSS to show the list in row wise */
+nav{
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+/* Now we need to show the nav list which we have made so we write the code for it inside the nav ul tag and gap we have used here for separating the list*/
+nav ul{
+    display: flex;
+    color: white;
+    gap: 10px;
+}
+/* Now if we want to remove the dot from each line so the syntax for it is mentioned below */
+nav ul li{
+    list-style: none;
+}
+/* Below syntax is of normal link and we have to give color to the link and text decoration is none because we have remove the underline from it */
+.Styled-link{
+    color: blueviolet;
+    text-decoration: none;
+}
+/* .Styled-link:link{
+    color: white; */
+/* } */
+.Styled-linK:visited{
+    color: brown;
+}
+/* Below syntax used for when we move our cursor in lists mentioned in web page */
+.Styled-link:hover{
+    color: green;
+}
+/* Transition part is also available and the syntax is mentioned below */
+.Styled-link:hover{
+    color: green;
+    transition: ease-in;
+}

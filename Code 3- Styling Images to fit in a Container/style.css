@@ -1,0 +1,19 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+
+/* object fit we used below for expect ratio maintained */
+.myimage{
+    width: 200px;
+    /* height: 200px; */
+    background-color: aqua;
+    object-fit: cover;   
+}
+.bgimg{
+    background: url("https://envato-shoebox-0.imgix.net/f091/b306-252d-4a14-9110-e35f8f69d960/CDS_3331.jpg?auto=compress%2Cformat&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&w=1000&fit=max&markalign=center%2Cmiddle&markalpha=18&s=c3efdfe43d0ccc89b1980a125c51010c");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

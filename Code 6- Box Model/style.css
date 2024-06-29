@@ -1,0 +1,29 @@
+/* Below is the css of box model always remember Margin is not the part of Box model it will remain outside from Box */
+/* .box{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    padding: 15px 5px;
+    border: 4px solid red;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.inline-box{
+    background-color: aqua;
+}
+.block-box{
+    background-color: red;
+}
+/* Width and height of inline box will never be change but the width of block element will change and padding and border will change in both inline and in block level and margin will not change vertically of Inline elements only block level margin will be change*/
+/* Style box sizing below used to define the box including the border and padding in inside it */
+.inline-box , .block-box{
+    width: 200px;
+    height: 100px;
+    padding: 15px;
+    border: 5px solid black;
+    margin: 50px;
+    box-sizing: border-box;
+}

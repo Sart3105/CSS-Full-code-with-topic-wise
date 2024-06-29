@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+
+/* Below in the syntax we are learning of minmax concept as it is a part of Dimension responsive */
+    display: grid;
+    grid-template-columns: repeat(3 , minmax(100px , 1fr));
+    grid-template-rows: fit-content(100px)1fr;
+    grid-gap: 10px;
+    border: 1px solid black;
+
+
+    /* width: 400px; */
+    /* Niche jo syntax use hua hai grid template column wala uska matlab hai ki 3 jo coloumn hai wo 100 px ke each honge */
+    /* grid-template-columns: repeat(3 , 100px);
+    grid-template-rows: repeat(3 , 100px); */
+    /* Grid gap use krte hai hum jab hme gap chahiye hota hai items ke bich me */
+    /* grid-gap: 10px;
+    border: 1px solid black; */
+
+/* Justify items properties are mentioned below */
+    /* justify-items: start; */
+    /* justify-items: baseline; */
+    /* justify-items: center; */
+    /* justify-items: flex-end; */
+    /* justify-items: stretch; */
+
+/* Align items properties are mentioned below */
+/*       
+    align-items: start; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+
+/* Properties of Justify content are mentioned below */
+     /* justify-content: center;
+     justify-content: space-around;
+     justify-content: space-between; */
+
+/* Align content properties syntax */
+
+    /* justify-content: center;
+    align-content: center; */
+
+}
+
+.item{
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    font-size: 30px;
+}

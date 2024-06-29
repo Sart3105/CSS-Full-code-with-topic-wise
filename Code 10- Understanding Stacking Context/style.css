@@ -1,0 +1,25 @@
+.container{
+    width: 700px;
+    height: 500px;
+    background-color: aqua;
+}
+.box1{
+    /* Z Index is used for stacking the content in websites in case of boxes mainly */
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 15;
+}
+.box2{
+    width: 90px;
+    height: 90px;
+    background-color: green;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+
+}
